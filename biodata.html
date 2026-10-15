@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Mahasiswa - Muhammad Hanif Ramadhani</title>
+</head>
+<body>
+    <header>
+        <h1>Biodata Mahasiswa</h1>
+        <p>Praktikum 2: HTML Lanjutan</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda Praktikum</a> |
+        <a href="#biodata">Biodata</a> |
+        <a href="#form">Form Biodata</a>
+    </nav>
+
+    <main>
+        <section id="biodata">
+            <h2>Data Mahasiswa</h2>
+            <table border="1">
+                <caption>Biodata Muhammad Hanif Ramadhani</caption>
+                <thead><tr><th>Data</th><th>Keterangan</th></tr></thead>
+                <tbody>
+                    <tr><td>Nama</td><td>Muhammad Hanif Ramadhani</td></tr>
+                    <tr><td>NIM</td><td>312510291</td></tr>
+                    <tr><td>Program Studi</td><td>Teknik Informatika</td></tr>
+                    <tr><td>Mata Kuliah</td><td>Pemrograman Web</td></tr>
+                    <tr><td>Praktikum</td><td>Praktikum 2 - HTML Lanjutan</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>Form Biodata</h2>
+            <form>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required minlength="3">
+                </p>
+                <p>
+                    <label for="nim">NIM:</label><br>
+                    <input type="text" id="nim" name="nim" value="312510291" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="prodi">Program Studi:</label><br>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="alamat">Alamat:</label><br>
+                    <textarea id="alamat" name="alamat" rows="4" cols="40" required></textarea>
+                </p>
+                <p>
+                    <label for="umur">Umur (17-60 tahun):</label><br>
+                    <input type="number" id="umur" name="umur" min="17" max="60" required>
+                </p>
+                <button type="submit">Simpan</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <p>Tambahkan file audio.mp3 dan/atau video.mp4 ke folder media agar multimedia dapat diputar.</p>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Browser tidak mendukung audio atau file belum tersedia.
+            </audio>
+            <br><br>
+            <video controls width="480">
+                <source src="media/video.mp4" type="video/mp4">
+                Browser tidak mendukung video atau file belum tersedia.
+            </video>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Hanif Ramadhani</p>
+    </footer>
+</body>
+</html>

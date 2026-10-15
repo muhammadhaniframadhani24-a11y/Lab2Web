@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 2 - HTML Lanjutan</title>
+</head>
+<body>
+    <header>
+        <h1>Praktikum 2: HTML Lanjutan</h1>
+        <p>Nama: Muhammad Hanif Ramadhani</p>
+        <p>NIM: 312510291</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Beranda</a> |
+        <a href="biodata.html">Biodata Mahasiswa</a> |
+        <a href="#form-registrasi">Form Registrasi</a>
+    </nav>
+
+    <main>
+        <section id="tabel-mahasiswa">
+            <h2>1. Tabel Data Mahasiswa</h2>
+            <table border="1">
+                <caption>Data Mahasiswa</caption>
+                <thead>
+                    <tr>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Program Studi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>312510291</td>
+                        <td>Muhammad Hanif Ramadhani</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>312510292</td>
+                        <td>Andi Pratama</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                    <tr>
+                        <td>312510293</td>
+                        <td>Siti Rahma</td>
+                        <td>Sistem Informasi</td>
+                    </tr>
+                    <tr>
+                        <td>312510294</td>
+                        <td>Budi Santoso</td>
+                        <td>Teknik Informatika</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Jumlah mahasiswa</td>
+                        <td>4 orang</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="nilai-praktikum">
+            <h2>2. Tabel Nilai Praktikum</h2>
+            <table border="1">
+                <caption>Nilai Praktikum HTML</caption>
+                <thead>
+                    <tr><th>No</th><th>Nama</th><th>Nilai</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>1</td><td>Muhammad Hanif Ramadhani</td><td>90</td></tr>
+                    <tr><td>2</td><td>Andi Pratama</td><td>85</td></tr>
+                    <tr><td>3</td><td>Siti Rahma</td><td>88</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr><td colspan="2">Rata-rata</td><td>87,67</td></tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="form-registrasi">
+            <h2>3. Form Registrasi Mahasiswa</h2>
+            <form>
+                <p>
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required minlength="3">
+                </p>
+                <p>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required minlength="6">
+                </p>
+                <p>
+                    <label for="tanggal">Tanggal Lahir:</label><br>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                </p>
+
+                <h3>Jenis Kelamin</h3>
+                <input type="radio" id="laki" name="jk" value="Laki-laki" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jk" value="Perempuan">
+                <label for="perempuan">Perempuan</label>
+
+                <h3>Keahlian</h3>
+                <input type="checkbox" id="html" name="skill" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skill" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skill" value="JavaScript">
+                <label for="js">JavaScript</label>
+
+                <p>
+                    <label for="prodi">Program Studi:</label><br>
+                    <select id="prodi" name="prodi" required>
+                        <option value="">-- Pilih Program Studi --</option>
+                        <option value="ti">Teknik Informatika</option>
+                        <option value="si">Sistem Informasi</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="alamat">Alamat:</label><br>
+                    <textarea id="alamat" name="alamat" rows="5" cols="40" required></textarea>
+                </p>
+                <p>
+                    <label for="umur">Umur (17-60 tahun):</label><br>
+                    <input type="number" id="umur" name="umur" min="17" max="60" required>
+                </p>
+                <button type="submit">Daftar</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section id="multimedia">
+            <h2>4. Multimedia HTML</h2>
+            <h3>Audio</h3>
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Browser tidak mendukung audio atau file audio.mp3 belum ditambahkan.
+            </audio>
+
+            <h3>Video</h3>
+            <video controls width="480">
+                <source src="media/video.mp4" type="video/mp4">
+                Browser tidak mendukung video atau file video.mp4 belum ditambahkan.
+            </video>
+            <p>Letakkan file audio bernama <code>audio.mp3</code> dan video bernama <code>video.mp4</code> di folder media.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Muhammad Hanif Ramadhani - Teknik Informatika</p>
+    </footer>
+</body>
+</html>
